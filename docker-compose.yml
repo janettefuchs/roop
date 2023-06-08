@@ -1,6 +1,8 @@
 services:
   roop:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile-python
     volumes:
       - .:/app
       - .insightface:/.insightface
